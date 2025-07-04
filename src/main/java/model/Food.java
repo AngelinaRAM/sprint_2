@@ -10,7 +10,7 @@ public abstract class Food implements Discountable {
 
     @Override
     public double getDiscount() {
-        return Discount.discount60;
+        return Discount.DISCOUNT_RED_APPLES;
     }
 
     public boolean isVegetarian() {
