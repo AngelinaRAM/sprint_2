@@ -12,10 +12,10 @@ public class Main {
         Meat meat = new Meat(5, 100);
 
         //Яблоки красные в количестве 10 кг по цене 50 рублей
-        Apple redApple = new Apple(10,50, Colour.red);
+        Apple redApple = new Apple(10,50, Colour.RED);
 
         //Яблоки зелёные в количестве 8 кг по цене 60 рублей
-        Apple greenApple = new Apple(8,60, Colour.green);
+        Apple greenApple = new Apple(8,60, Colour.GREEN);
 
         //Создали массив продуктов из этих элементов
         Food[] items = {meat, redApple, greenApple};
@@ -23,9 +23,9 @@ public class Main {
         //Проинициализировали корзину с помощью созданного массива
         ShoppingCart shoppingCart = new ShoppingCart(items);
 
-        System.out.println("Общая сумма товаров без скидки: " + shoppingCart.getTotalWithoutDiscount() + " руб");
-        System.out.println("Общая сумма товаров со скидкой: " + shoppingCart.getTotalWithDiscount() + " руб");
-        System.out.println("Сумма всех вегетарианских продуктов без скидки: " + shoppingCart.getTotalVegetarianProducts() + " руб");
+        System.out.printf("Общая сумма товаров без скидки: " + shoppingCart.getTotalWithoutDiscount() + " руб\n");
+        System.out.printf("Общая сумма товаров со скидкой: " + shoppingCart.getTotalWithDiscount() + " руб\n");
+        System.out.printf("Сумма всех вегетарианских продуктов без скидки: " + shoppingCart.getTotalVegetarianProducts() + " руб\n");
 
 
     }
